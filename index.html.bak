@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hawaii 2026 — Villarreal Family Trip</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f0eb;
+    color: #2d2a26;
+    line-height: 1.6;
+  }
+  .hero {
+    background: linear-gradient(135deg, #1a5c6e 0%, #2d8a9e 50%, #4ecdc4 100%);
+    color: white;
+    padding: 80px 24px 60px;
+    text-align: center;
+  }
+  .hero h1 { font-size: 2.5rem; font-weight: 700; letter-spacing: -0.5px; }
+  .hero .dates { font-size: 1.25rem; margin-top: 12px; opacity: 0.9; }
+  .hero .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 6px 20px;
+    border-radius: 20px;
+    margin-top: 16px;
+    font-size: 0.9rem;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+  section {
+    background: white;
+    border-radius: 12px;
+    padding: 32px;
+    margin: 24px 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  }
+  section h2 {
+    font-size: 1.25rem;
+    color: #1a5c6e;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e8f4f8;
+  }
+  .people {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+  .person {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: #faf8f5;
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+  .person .check { font-weight: 700; min-width: 20px; }
+  .person .label { font-size: 0.75rem; color: #8c8279; display: block; }
+  .link-box {
+    background: #f0f7fa;
+    border: 1px dashed #b8d8e3;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    margin: 16px 0;
+  }
+  .link-box a {
+    color: #1a5c6e;
+    font-weight: 600;
+    word-break: break-all;
+    font-size: 0.9rem;
+  }
+  .steps { list-style: none; counter-reset: step; }
+  .steps li {
+    counter-increment: step;
+    padding: 10px 0 10px 36px;
+    position: relative;
+  }
+  .steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+    background: #1a5c6e;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 24px;
+    font-weight: 600;
+  }
+  .rule {
+    padding: 14px 0;
+    border-bottom: 1px solid #f0ebe4;
+    display: flex;
+    gap: 12px;
+  }
+  .rule:last-child { border-bottom: none; }
+  .rule .num {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4ecdc4;
+    min-width: 32px;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .card {
+    background: #faf8f5;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .card h3 { font-size: 0.85rem; color: #8c8279; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+  .card .value { font-size: 1.1rem; font-weight: 600; }
+  .card .sub { font-size: 0.85rem; color: #8c8279; margin-top: 4px; }
+  .card a { color: #1a5c6e; }
+  a { color: #1a5c6e; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .footer {
+    text-align: center;
+    padding: 40px 24px;
+    color: #8c8279;
+    font-size: 0.85rem;
+  }
+  @media (max-width: 500px) {
+    .hero h1 { font-size: 1.8rem; }
+    section { padding: 24px 20px; }
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Hawaii 2026</h1>
+  <div class="dates">September 4–8 · Maui, Hawaii</div>
+  <div class="badge">Villarreal Family Trip</div>
+</div>
+
+<div class="container">
+
+  <section>
+    <h2>Who's Coming</h2>
+    <div class="people">
+      <div class="person"><span class="check">—</span> Mom <span class="label">Laurie · IAH</span></div>
+      <div class="person"><span class="check">—</span> Dad <span class="label">Ruben · IAH</span></div>
+      <div class="person"><span class="check">—</span> Aaron <span class="label">IAH</span></div>
+      <div class="person"><span class="check">—</span> Natalie <span class="label">IAH</span></div>
+      <div class="person"><span class="check">—</span> Jose <span class="label">IAH</span></div>
+      <div class="person"><span class="check">—</span> Cristina <span class="label">IAH</span></div>
+      <div class="person"><span class="check">—</span> Michael <span class="label">IAH</span></div>
+      <div class="person"><span class="check" style="color:#4ecdc4">✓</span> Matthew <span class="label">LAX</span></div>
+      <div class="person"><span class="check" style="color:#4ecdc4">✓</span> Sujita <span class="label">LAX</span></div>
+      <div class="person"><span class="check" style="color:#4ecdc4">✓</span> Imara <span class="label">LAX</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Expense Tracking</h2>
+    <p style="margin-bottom:12px">Mom &amp; Dad are covering the trip. We use Splitwise to track what everyone spends — one simple reimbursement at the end.</p>
+    <div class="link-box">
+      <div style="font-size:0.8rem;color:#8c8279;margin-bottom:6px">Join the group</div>
+      <a href="https://www.splitwise.com/join/EWPTS1BJJmC%2B208dw5">splitwise.com/join/EWPTS1BJJmC%2B208dw5</a>
+    </div>
+    <ol class="steps">
+      <li>Click the link above (copy &amp; paste into browser if clicking doesn't work)</li>
+      <li>Sign up — Google account or email, free</li>
+      <li>You'll see <strong>Hawaii Labor Day 2026</strong> — tap to join</li>
+      <li>Download the app for the trip (optional, but easier)</li>
+    </ol>
+    <div class="card" style="margin-top:16px">
+      <h3>During the trip</h3>
+      <div class="value">Tap + → enter amount → split equally → add a note → done</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Imara Guidelines</h2>
+    <p style="color:#8c8279;margin-bottom:16px;font-size:0.9rem">A few things to keep our 1-year-old safe and her parents sane. Guardrails, not walls.</p>
+    <div class="rule">
+      <div class="num">1</div>
+      <div><strong>Water = Mom &amp; Dad only.</strong> Pool, ocean, splash pad — only Sujita or Matthew handle Imara in or near water. Not about trust; parental instinct.</div>
+    </div>
+    <div class="rule">
+      <div class="num">2</div>
+      <div><strong>Ask first.</strong> Want to take her somewhere, feed her something, pick her up? Quick "can I?" goes a long way.</div>
+    </div>
+    <div class="rule">
+      <div class="num">3</div>
+      <div><strong>Nap schedule is sacred.</strong> We'll share her rhythm. Please don't wake a sleeping baby — even for a photo.</div>
+    </div>
+    <div class="rule">
+      <div class="num">4</div>
+      <div><strong>Sun protection on us.</strong> We handle sunscreen, hat, shade. If her hat flies off, tell us — we'll grab it.</div>
+    </div>
+    <div class="rule">
+      <div class="num">5</div>
+      <div><strong>Let her come to you.</strong> She warms up at her own pace. No grab-and-go.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Flights</h2>
+    <p style="color:#8c8279;margin-bottom:16px;font-size:0.9rem">Two departure cities — book separately. Target: locked by end of July.</p>
+    <div class="grid-2">
+      <div class="card">
+        <h3>From Los Angeles</h3>
+        <div class="value">LAX → OGG</div>
+        <div class="sub">Matthew · Sujita · Imara</div>
+        <div class="sub" style="margin-top:8px">Direct ~5.5h on Alaska, Delta, United, Hawaiian</div>
+        <div class="sub">Best find: ~$360 RT Alaska Airlines</div>
+      </div>
+      <div class="card">
+        <h3>From Houston</h3>
+        <div class="value">IAH → OGG</div>
+        <div class="sub">Mom · Dad · Aaron · Natalie · Jose · Cristina · Michael</div>
+        <div class="sub" style="margin-top:8px">United seasonal direct, or IAH→LAX/HNL→OGG</div>
+        <div class="sub">Also check HOU (Southwest) — sometimes cheaper</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lodging</h2>
+    <div class="card">
+      <h3>Leading Option</h3>
+      <div class="value">Honua Kai Resort &amp; Spa</div>
+      <div class="sub">Kāʻanapali, Maui — condo-style units, full kitchens, multiple pools, beach access</div>
+      <div class="sub" style="margin-top:8px"><a href="https://www.outrigger.com/hotels-resorts/maui/outrigger-honua-kai-resort-and-spa">outrigger.com/honua-kai</a></div>
+    </div>
+    <div style="margin-top:12px;color:#8c8279;font-size:0.9rem">Natalie &amp; Jose: where did you stay in Hawaii? | Mom: travel agent quote?</div>
+  </section>
+
+  <section>
+    <h2>Research &amp; Resources</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Flight Search</h3>
+        <div class="value"><a href="https://www.google.com/travel/flights">Google Flights</a></div>
+        <div class="sub">Set alerts for LAX→OGG and IAH→OGG</div>
+      </div>
+      <div class="card">
+        <h3>Honua Kai Resort</h3>
+        <div class="value"><a href="https://www.outrigger.com/hotels-resorts/maui/outrigger-honua-kai-resort-and-spa">Outrigger.com</a></div>
+        <div class="sub">Floor plans, photos, availability</div>
+      </div>
+      <div class="card">
+        <h3>Maui Guide</h3>
+        <div class="value"><a href="https://www.gohawaii.com/islands/maui">GoHawaii.com/Maui</a></div>
+        <div class="sub">Official island guide — beaches, activities, maps</div>
+      </div>
+      <div class="card">
+        <h3>Snorkel Report</h3>
+        <div class="value"><a href="https://www.thesnorkelstore.com/snorkel-report">The Snorkel Store</a></div>
+        <div class="sub">Daily Maui conditions — where to go each morning</div>
+      </div>
+      <div class="card">
+        <h3>Haleakalā Reservations</h3>
+        <div class="value"><a href="https://www.recreation.gov/ticket/facility/253731">Recreation.gov</a></div>
+        <div class="sub">Sunrise tickets sell out — book 60 days ahead</div>
+      </div>
+      <div class="card">
+        <h3>Costco Travel</h3>
+        <div class="value"><a href="https://www.costcotravel.com/Hawaii">CostcoTravel.com</a></div>
+        <div class="sub">Package deals — flights + car + hotel bundles</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Activities &amp; Ideas</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Scuba Diving</h3>
+        <div class="value">Makena Landing · Honolua Bay</div>
+        <div class="sub">Shore diving, no boat needed — Michael</div>
+      </div>
+      <div class="card">
+        <h3>Beach Catamaran</h3>
+        <div class="value">Rentals available</div>
+        <div class="sub">Michael's idea</div>
+      </div>
+      <div class="card">
+        <h3>Road to Hana</h3>
+        <div class="value">Full day trip</div>
+        <div class="sub">Waterfalls, black sand beach, epic drive</div>
+      </div>
+      <div class="card">
+        <h3>Haleakalā Sunrise</h3>
+        <div class="value">10,000 ft summit</div>
+        <div class="sub">Reservation required · dress warm</div>
+      </div>
+    </div>
+    <p style="margin-top:20px;color:#8c8279;font-size:0.9rem;text-align:center">Got an idea? Text Matthew and it goes here.</p>
+  </section>
+
+</div>
+
+<div class="footer">
+  Questions? Text Matthew · Last updated May 31, 2026
+</div>
+
+</body>
+</html>
