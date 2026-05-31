@@ -9,7 +9,7 @@
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f0eb; color: #2d2a26; line-height: 1.6; }
   nav { background: #1a5c6e; padding: 0; position: sticky; top: 0; z-index: 10; }
   nav .inner { max-width: 760px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 4px; padding: 8px 24px; }
-  nav a { color: rgba(255,255,255,0.85); text-decoration: none; padding: 6px 14px; border-radius: 6px; font-size: 0.9rem; }
+  nav a { min-height: 44px; display: flex; align-items: center; color: rgba(255,255,255,0.85); text-decoration: none; padding: 6px 14px; border-radius: 6px; font-size: 0.9rem; }
   nav a:hover, nav a.active { background: rgba(255,255,255,0.15); color: white; }
   .hero { background: linear-gradient(135deg, #1a5c6e 0%, #2d8a9e 50%, #4ecdc4 100%); color: white; padding: 40px 24px 36px; text-align: center; }
   .hero h1 { font-size: 2rem; font-weight: 700; }
@@ -19,23 +19,23 @@
   section h2 { font-size: 1.25rem; color: #1a5c6e; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid #e8f4f8; }
   .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .stat { background: #faf8f5; border-radius: 10px; padding: 20px; text-align: center; }
-  .stat .label { font-size: 0.8rem; color: #8c8279; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .stat .label { font-size: 0.875rem; color: #6b6560; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
   .stat .num { font-size: 2rem; font-weight: 700; color: #1a5c6e; }
-  .stat .range { font-size: 0.85rem; color: #8c8279; margin-top: 4px; }
+  .stat .range { font-size: 0.9rem; color: #6b6560; margin-top: 4px; }
   .stat .icon { font-size: 1.8rem; margin-bottom: 4px; }
   .note { background: #f0f7fa; border-radius: 8px; padding: 16px; margin-top: 16px; font-size: 0.9rem; color: #1a5c6e; }
   .note strong { color: #2d2a26; }
   .detail-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
   .detail-table td { padding: 10px 12px; border-bottom: 1px solid #f0ebe4; font-size: 0.95rem; }
-  .detail-table td:first-child { color: #8c8279; width: 160px; }
+  .detail-table td:first-child { color: #6b6560; width: 160px; }
   .detail-table td:last-child { font-weight: 600; }
   a { color: #1a5c6e; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .footer { text-align: center; padding: 40px 24px; color: #8c8279; font-size: 0.85rem; }
+  .footer { text-align: center; padding: 40px 24px; color: #6b6560; font-size: 0.9rem; }
   @media (max-width: 500px) {
     .stats { grid-template-columns: 1fr; }
     nav .inner { padding: 6px 12px; }
-    nav a { padding: 6px 8px; font-size: 0.8rem; }
+    nav a { padding: 6px 8px; font-size: 0.875rem; }
   }
 </style>
 </head>
