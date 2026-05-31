@@ -120,6 +120,9 @@
   .card h3 { font-size: 0.85rem; color: #8c8279; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
   .card .value { font-size: 1.1rem; font-weight: 600; }
   .card .sub { font-size: 0.85rem; color: #8c8279; margin-top: 4px; }
+  .card a { color: #1a5c6e; }
+  a { color: #1a5c6e; text-decoration: none; }
+  a:hover { text-decoration: underline; }
   .footer {
     text-align: center;
     padding: 40px 24px;
@@ -146,16 +149,16 @@
   <section>
     <h2>Who's Coming</h2>
     <div class="people">
-      <div class="person"><span class="check">—</span> Mom <span class="label">Laurie</span></div>
-      <div class="person"><span class="check">—</span> Dad <span class="label">Ruben</span></div>
-      <div class="person"><span class="check">—</span> Aaron</div>
-      <div class="person"><span class="check">—</span> Natalie</div>
-      <div class="person"><span class="check">—</span> Jose</div>
-      <div class="person"><span class="check">—</span> Cristina</div>
-      <div class="person"><span class="check">—</span> Michael</div>
-      <div class="person"><span class="check" style="color:#4ecdc4">✓</span> Matthew</div>
-      <div class="person"><span class="check" style="color:#4ecdc4">✓</span> Sujita</div>
-      <div class="person"><span class="check" style="color:#4ecdc4">✓</span> Imara</div>
+      <div class="person"><span class="check">—</span> Mom <span class="label">Laurie · IAH</span></div>
+      <div class="person"><span class="check">—</span> Dad <span class="label">Ruben · IAH</span></div>
+      <div class="person"><span class="check">—</span> Aaron <span class="label">IAH</span></div>
+      <div class="person"><span class="check">—</span> Natalie <span class="label">IAH</span></div>
+      <div class="person"><span class="check">—</span> Jose <span class="label">IAH</span></div>
+      <div class="person"><span class="check">—</span> Cristina <span class="label">IAH</span></div>
+      <div class="person"><span class="check">—</span> Michael <span class="label">IAH</span></div>
+      <div class="person"><span class="check" style="color:#4ecdc4">✓</span> Matthew <span class="label">LAX</span></div>
+      <div class="person"><span class="check" style="color:#4ecdc4">✓</span> Sujita <span class="label">LAX</span></div>
+      <div class="person"><span class="check" style="color:#4ecdc4">✓</span> Imara <span class="label">LAX</span></div>
     </div>
   </section>
 
@@ -204,21 +207,69 @@
   </section>
 
   <section>
-    <h2>Flights &amp; Lodging</h2>
+    <h2>Flights</h2>
+    <p style="color:#8c8279;margin-bottom:16px;font-size:0.9rem">Two departure cities — book separately. Target: locked by end of July.</p>
     <div class="grid-2">
       <div class="card">
-        <h3>Flights</h3>
-        <div class="value">LAX → OGG (Maui)</div>
-        <div class="sub">Direct if available, or LAX→HNL + island hop</div>
-        <div class="sub" style="margin-top:8px">Best find: ~$360 RT Alaska Airlines</div>
-        <div class="sub">Target: book by end of July</div>
+        <h3>From Los Angeles</h3>
+        <div class="value">LAX → OGG</div>
+        <div class="sub">Matthew · Sujita · Imara</div>
+        <div class="sub" style="margin-top:8px">Direct ~5.5h on Alaska, Delta, United, Hawaiian</div>
+        <div class="sub">Best find: ~$360 RT Alaska Airlines</div>
       </div>
       <div class="card">
-        <h3>Lodging</h3>
-        <div class="value">Honua Kai Resort</div>
-        <div class="sub">Kāʻanapali, Maui — condo-style, full kitchens, pools, beach access</div>
-        <div class="sub" style="margin-top:8px">Natalie &amp; Jose: where did you stay?</div>
-        <div class="sub">Mom: travel agent quote?</div>
+        <h3>From Houston</h3>
+        <div class="value">IAH → OGG</div>
+        <div class="sub">Mom · Dad · Aaron · Natalie · Jose · Cristina · Michael</div>
+        <div class="sub" style="margin-top:8px">United seasonal direct, or IAH→LAX/HNL→OGG</div>
+        <div class="sub">Also check HOU (Southwest) — sometimes cheaper</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lodging</h2>
+    <div class="card">
+      <h3>Leading Option</h3>
+      <div class="value">Honua Kai Resort &amp; Spa</div>
+      <div class="sub">Kāʻanapali, Maui — condo-style units, full kitchens, multiple pools, beach access</div>
+      <div class="sub" style="margin-top:8px"><a href="https://www.outrigger.com/hotels-resorts/maui/outrigger-honua-kai-resort-and-spa">outrigger.com/honua-kai</a></div>
+    </div>
+    <div style="margin-top:12px;color:#8c8279;font-size:0.9rem">Natalie &amp; Jose: where did you stay in Hawaii? | Mom: travel agent quote?</div>
+  </section>
+
+  <section>
+    <h2>Research &amp; Resources</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>Flight Search</h3>
+        <div class="value"><a href="https://www.google.com/travel/flights">Google Flights</a></div>
+        <div class="sub">Set alerts for LAX→OGG and IAH→OGG</div>
+      </div>
+      <div class="card">
+        <h3>Honua Kai Resort</h3>
+        <div class="value"><a href="https://www.outrigger.com/hotels-resorts/maui/outrigger-honua-kai-resort-and-spa">Outrigger.com</a></div>
+        <div class="sub">Floor plans, photos, availability</div>
+      </div>
+      <div class="card">
+        <h3>Maui Guide</h3>
+        <div class="value"><a href="https://www.gohawaii.com/islands/maui">GoHawaii.com/Maui</a></div>
+        <div class="sub">Official island guide — beaches, activities, maps</div>
+      </div>
+      <div class="card">
+        <h3>Snorkel Report</h3>
+        <div class="value"><a href="https://www.thesnorkelstore.com/snorkel-report">The Snorkel Store</a></div>
+        <div class="sub">Daily Maui conditions — where to go each morning</div>
+      </div>
+      <div class="card">
+        <h3>Haleakalā Reservations</h3>
+        <div class="value"><a href="https://www.recreation.gov/ticket/facility/253731">Recreation.gov</a></div>
+        <div class="sub">Sunrise tickets sell out — book 60 days ahead</div>
+      </div>
+      <div class="card">
+        <h3>Costco Travel</h3>
+        <div class="value"><a href="https://www.costcotravel.com/Hawaii">CostcoTravel.com</a></div>
+        <div class="sub">Package deals — flights + car + hotel bundles</div>
       </div>
     </div>
   </section>
