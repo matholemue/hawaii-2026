@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather — Hawaii 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f0eb; color: #2d2a26; line-height: 1.6; }
+  nav { background: #1a5c6e; padding: 0; position: sticky; top: 0; z-index: 10; }
+  nav .inner { max-width: 760px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 4px; padding: 8px 24px; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; padding: 6px 14px; border-radius: 6px; font-size: 0.9rem; }
+  nav a:hover, nav a.active { background: rgba(255,255,255,0.15); color: white; }
+  .hero { background: linear-gradient(135deg, #1a5c6e 0%, #2d8a9e 50%, #4ecdc4 100%); color: white; padding: 40px 24px 36px; text-align: center; }
+  .hero h1 { font-size: 2rem; font-weight: 700; }
+  .hero p { opacity: 0.85; margin-top: 6px; }
+  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  section { background: white; border-radius: 12px; padding: 32px; margin: 24px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  section h2 { font-size: 1.25rem; color: #1a5c6e; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid #e8f4f8; }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .stat { background: #faf8f5; border-radius: 10px; padding: 20px; text-align: center; }
+  .stat .label { font-size: 0.8rem; color: #8c8279; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .stat .num { font-size: 2rem; font-weight: 700; color: #1a5c6e; }
+  .stat .range { font-size: 0.85rem; color: #8c8279; margin-top: 4px; }
+  .stat .icon { font-size: 1.8rem; margin-bottom: 4px; }
+  .note { background: #f0f7fa; border-radius: 8px; padding: 16px; margin-top: 16px; font-size: 0.9rem; color: #1a5c6e; }
+  .note strong { color: #2d2a26; }
+  .detail-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+  .detail-table td { padding: 10px 12px; border-bottom: 1px solid #f0ebe4; font-size: 0.95rem; }
+  .detail-table td:first-child { color: #8c8279; width: 160px; }
+  .detail-table td:last-child { font-weight: 600; }
+  a { color: #1a5c6e; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .footer { text-align: center; padding: 40px 24px; color: #8c8279; font-size: 0.85rem; }
+  @media (max-width: 500px) {
+    .stats { grid-template-columns: 1fr; }
+    nav .inner { padding: 6px 12px; }
+    nav a { padding: 6px 8px; font-size: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <a href="flights.html">Flights</a>
+    <a href="lodging.html">Lodging</a>
+    <a href="splitwise.html">Splitwise</a>
+    <a href="activities.html">Activities</a>
+    <a href="weather.html" class="active">Weather</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>🌤️ Weather</h1>
+  <p>Maui, early September — 5-year historical averages</p>
+</div>
+
+<div class="container">
+
+  <section>
+    <h2>What to Expect</h2>
+    <div class="stats">
+      <div class="stat">
+        <div class="icon">☀️</div>
+        <div class="label">Daytime High</div>
+        <div class="num">82°F</div>
+        <div class="range">Range: 75–88°F</div>
+      </div>
+      <div class="stat">
+        <div class="icon">🌙</div>
+        <div class="label">Nighttime Low</div>
+        <div class="num">72°F</div>
+        <div class="range">Range: 70–74°F</div>
+      </div>
+      <div class="stat">
+        <div class="icon">🌊</div>
+        <div class="label">Ocean Temp</div>
+        <div class="num">80°F</div>
+        <div class="range">Perfect swimming</div>
+      </div>
+      <div class="stat">
+        <div class="icon">💧</div>
+        <div class="label">Humidity</div>
+        <div class="num">~70%</div>
+        <div class="range">Trade winds keep it comfy</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Rainfall</h2>
+    <div class="stats">
+      <div class="stat">
+        <div class="label">Monthly Total</div>
+        <div class="num">0.3–0.8″</div>
+        <div class="range">Very dry month</div>
+      </div>
+      <div class="stat">
+        <div class="label">Rainy Days</div>
+        <div class="num">1–5 days</div>
+        <div class="range">Entire month</div>
+      </div>
+    </div>
+    <div class="note">
+      <strong>Rain likelihood:</strong> ~10% chance on any given day in early September. Any rain is typically light and short-lived — passing showers, not all-day events. The west side (Kāʻanapali, Lāhainā) is the driest part of the island.
+    </div>
+  </section>
+
+  <section>
+    <h2>Detailed Breakdown</h2>
+    <table class="detail-table">
+      <tr><td>Average high</td><td>82°F (28°C)</td></tr>
+      <tr><td>High range</td><td>75°F to 88°F (24°C to 31°C)</td></tr>
+      <tr><td>Average low</td><td>72°F (22°C)</td></tr>
+      <tr><td>Ocean temperature</td><td>80°F (27°C)</td></tr>
+      <tr><td>Average humidity</td><td>70%</td></tr>
+      <tr><td>Monthly rainfall</td><td>0.3–0.8 inches</td></tr>
+      <tr><td>Rain days (per month)</td><td>1–5</td></tr>
+      <tr><td>Daily rain chance</td><td>~10%</td></tr>
+      <tr><td>Sunrise</td><td>~6:10 AM</td></tr>
+      <tr><td>Sunset</td><td>~6:35 PM</td></tr>
+      <tr><td>UV Index</td><td>Very high — sunscreen essential</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>What This Means for Packing</h2>
+    <div class="note">
+      <strong>Daytime:</strong> Light clothing, swimwear, sandals. It's warm — you'll live in shorts.<br><br>
+      <strong>Evenings:</strong> A light layer (hoodie or long-sleeve) for trade winds and sunset on the beach.<br><br>
+      <strong>Rain gear:</strong> A packable rain jacket just in case — but you probably won't use it.<br><br>
+      <strong>Sun protection:</strong> Reef-safe sunscreen, hat, sunglasses. The UV index is no joke.<br><br>
+      <strong>Haleakalā:</strong> If you're doing sunrise at the summit, bring actual warm clothes — it's ~40°F at 10,000 ft before dawn. Pants, jacket, beanie.
+    </div>
+  </section>
+
+  <section>
+    <h2>Microclimates</h2>
+    <p style="margin-bottom:12px">Maui has multiple climate zones on one island. Where we'll be:</p>
+    <table class="detail-table">
+      <tr><td>Kāʻanapali / Lāhainā</td><td>Sunny, dry, warm — this is where Honua Kai is. The leeward (west) side gets the least rain.</td></tr>
+      <tr><td>Road to Hana (east side)</td><td>Lush, tropical — expect passing showers and waterfalls. That's why it's so green.</td></tr>
+      <tr><td>Haleakalā summit</td><td>Alpine desert. ~40°F at sunrise, can be windy. Then 80°F at the beach two hours later.</td></tr>
+      <tr><td>Upcountry (Makawao, Kula)</td><td>Cooler — mid-70s. Worth a visit for the views and farm stands.</td></tr>
+    </table>
+  </section>
+
+</div>
+
+<div class="footer">
+  Sources: NOAA, WeatherSpark, GoHawaii.com · Last updated May 31, 2026
+</div>
+
+</body>
+</html>

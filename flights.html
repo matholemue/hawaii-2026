@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flights — Hawaii 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f0eb; color: #2d2a26; line-height: 1.6; }
+  nav { background: #1a5c6e; padding: 0; position: sticky; top: 0; z-index: 10; }
+  nav .inner { max-width: 760px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 4px; padding: 8px 24px; }
+  nav a { color: rgba(255,255,255,0.85); text-decoration: none; padding: 6px 14px; border-radius: 6px; font-size: 0.9rem; }
+  nav a:hover, nav a.active { background: rgba(255,255,255,0.15); color: white; }
+  .hero { background: linear-gradient(135deg, #1a5c6e 0%, #2d8a9e 50%, #4ecdc4 100%); color: white; padding: 40px 24px 36px; text-align: center; }
+  .hero h1 { font-size: 2rem; font-weight: 700; }
+  .hero p { opacity: 0.85; margin-top: 6px; }
+  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  section { background: white; border-radius: 12px; padding: 32px; margin: 24px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  section h2 { font-size: 1.25rem; color: #1a5c6e; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid #e8f4f8; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .card { background: #faf8f5; border-radius: 8px; padding: 20px; }
+  .card h3 { font-size: 0.85rem; color: #8c8279; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+  .card .value { font-size: 1.2rem; font-weight: 600; }
+  .card .sub { font-size: 0.9rem; color: #8c8279; margin-top: 4px; }
+  a { color: #1a5c6e; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .footer { text-align: center; padding: 40px 24px; color: #8c8279; font-size: 0.85rem; }
+  .timeline { border-left: 3px solid #e8f4f8; padding-left: 20px; margin: 16px 0; }
+  .timeline li { padding: 8px 0; list-style: none; position: relative; }
+  .timeline li::before { content: ''; position: absolute; left: -27px; top: 14px; width: 10px; height: 10px; background: #4ecdc4; border-radius: 50%; }
+  @media (max-width: 500px) {
+    .grid-2 { grid-template-columns: 1fr; }
+    nav .inner { padding: 6px 12px; }
+    nav a { padding: 6px 8px; font-size: 0.8rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <a href="flights.html" class="active">Flights</a>
+    <a href="lodging.html">Lodging</a>
+    <a href="splitwise.html">Splitwise</a>
+    <a href="activities.html">Activities</a>
+    <a href="weather.html">Weather</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>✈️ Flights</h1>
+  <p>September 4–8, 2026 · LAX + IAH → OGG</p>
+</div>
+
+<div class="container">
+
+  <section>
+    <h2>From Los Angeles</h2>
+    <div class="card">
+      <div class="value">LAX → OGG (Kahului, Maui)</div>
+      <div class="sub">Direct ~5h 30m</div>
+      <div class="sub" style="margin-top:8px">Airlines: Alaska, Delta, United, Hawaiian, Southwest</div>
+      <div class="sub">Best find so far: ~$360 RT Alaska Airlines</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>From Houston</h2>
+    <div class="card">
+      <h3>Mom · Dad · Aaron · Cristina · Michael</h3>
+      <div class="value">IAH → OGG</div>
+      <div class="sub">United has a seasonal direct (~8h). Otherwise connect through LAX, SFO, or HNL.</div>
+      <div class="sub" style="margin-top:8px">Also check HOU (Hobby) — Southwest sometimes runs cheaper HOU→LAX→OGG connections.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Timeline</h2>
+    <ul class="timeline">
+      <li><strong>Now</strong> — Set Google Flights alerts for both cities</li>
+      <li><strong>June</strong> — Watch for direct routes to publish (some airlines release ~6 months out)</li>
+      <li><strong>End of July</strong> — Target: all flights booked</li>
+      <li><strong>Aug 4</strong> — Haleakalā sunrise tickets go live on Recreation.gov (60 days before Oct 4, but we're Sep 4 — check 60 days prior to trip)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Research Tools</h2>
+    <div class="grid-2">
+      <a href="https://www.google.com/travel/flights" class="card" style="display:block;color:inherit">
+        <h3>Google Flights</h3>
+        <div class="sub">Set price alerts for LAX→OGG and IAH→OGG</div>
+      </a>
+      <a href="https://www.costcotravel.com/Hawaii" class="card" style="display:block;color:inherit">
+        <h3>Costco Travel</h3>
+        <div class="sub">Flight + car + hotel bundles</div>
+      </a>
+    </div>
+  </section>
+
+</div>
+
+<div class="footer">
+  Questions? Text Matthew · Last updated May 31, 2026
+</div>
+
+</body>
+</html>
