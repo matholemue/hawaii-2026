@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dining — Hawaii 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f0eb; color: #2d2a26; line-height: 1.6; }
+  nav { background: #1a5c6e; padding: 0; position: sticky; top: 0; z-index: 10; }
+  nav .inner { max-width: 760px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 4px; padding: 8px 24px; }
+  nav a { min-height: 44px; display: flex; align-items: center; color: rgba(255,255,255,0.85); text-decoration: none; padding: 6px 14px; border-radius: 6px; font-size: 0.9rem; }
+  nav a:hover, nav a.active { background: rgba(255,255,255,0.15); color: white; }
+  .hero { background: linear-gradient(135deg, #1a5c6e 0%, #2d8a9e 50%, #4ecdc4 100%); color: white; padding: 40px 24px 36px; text-align: center; }
+  .hero h1 { font-size: 2rem; font-weight: 700; }
+  .hero p { opacity: 0.85; margin-top: 6px; }
+  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  section { background: white; border-radius: 12px; padding: 32px; margin: 24px 0; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  section h2 { font-size: 1.25rem; color: #1a5c6e; margin-bottom: 20px; padding-bottom: 8px; border-bottom: 2px solid #e8f4f8; }
+  .restaurant { background: #faf8f5; border-radius: 10px; padding: 24px; margin-bottom: 16px; border-left: 4px solid #4ecdc4; }
+  .restaurant:last-child { margin-bottom: 0; }
+  .restaurant h3 { font-size: 1.1rem; color: #1a5c6e; margin-bottom: 4px; }
+  .restaurant .meta { font-size: 0.875rem; color: #6b6560; margin-bottom: 8px; }
+  .restaurant .desc { font-size: 0.95rem; margin-bottom: 8px; }
+  .restaurant .links a { color: #1a5c6e; font-size: 0.9rem; margin-right: 16px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .tag { display: inline-block; background: #e8f4f8; color: #1a5c6e; padding: 2px 10px; border-radius: 12px; font-size: 0.875rem; font-weight: 600; }
+  a { color: #1a5c6e; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .footer { text-align: center; padding: 40px 24px; color: #6b6560; font-size: 0.9rem; }
+  @media (max-width: 500px) {
+    nav .inner { padding: 6px 12px; }
+    nav a { padding: 6px 8px; font-size: 0.875rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <a href="flights.html">Flights</a>
+    <a href="lodging.html">Lodging</a>
+    <a href="splitwise.html">Splitwise</a>
+    <a href="dining.html" class="active">Dining</a>
+    <a href="activities.html">Activities</a>
+    <a href="weather.html">Weather</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>🍽️ Dining</h1>
+  <p>Family-friendly restaurants near Kāʻanapali</p>
+</div>
+
+<div class="container">
+
+  <section>
+    <h2>Recommended</h2>
+
+    <div class="restaurant">
+      <h3>Coco Deck</h3>
+      <div class="meta">4.5★ (338 reviews) · $$ · Mexican, New American, Seafood</div>
+      <div class="desc">Oceanfront dining on Front Street with a kid-friendly zone and games. Voted Best New Restaurant 2025. Happy hour, full bar, takes reservations. Great for groups.</div>
+      <div class="tags">
+        <span class="tag">Good for Groups</span>
+        <span class="tag">Kid-Friendly</span>
+        <span class="tag">Happy Hour</span>
+        <span class="tag">Takes Reservations</span>
+      </div>
+      <div class="links" style="margin-top:8px">
+        <a href="https://www.cocodecklahaina.com">Website →</a>
+        <a href="https://www.yelp.com/biz/coco-deck-lahaina-2">Yelp →</a>
+      </div>
+    </div>
+
+    <div class="restaurant">
+      <h3>Hula Grill Kāʻanapali</h3>
+      <div class="meta">3.9★ (4,778 reviews) · $$ · Hawaiian, Seafood</div>
+      <div class="desc">Beachfront dining with toes-in-the-sand Barefoot Bar. Live music daily, famous Hula Pie dessert, kids menu. Open-air, casual, great for sunset dinners.</div>
+      <div class="tags">
+        <span class="tag">Good for Groups</span>
+        <span class="tag">Kids Menu</span>
+        <span class="tag">Beachfront</span>
+        <span class="tag">Live Music</span>
+      </div>
+      <div class="links" style="margin-top:8px">
+        <a href="http://www.hulagrillkaanapali.com/">Website →</a>
+        <a href="https://www.yelp.com/biz/hula-grill-kaanapali-lahaina-2">Yelp →</a>
+      </div>
+    </div>
+
+    <div class="restaurant">
+      <h3>Leilani's On The Beach</h3>
+      <div class="meta">3.9★ (3,761 reviews) · $$$ · Seafood, Hawaiian</div>
+      <div class="desc">Panoramic ocean views on Kāʻanapali shore. Fresh line-caught fish daily, award-winning coastal cuisine. Lively, great for sunset dinners and special occasions.</div>
+      <div class="tags">
+        <span class="tag">Good for Groups</span>
+        <span class="tag">Ocean Views</span>
+        <span class="tag">Fresh Seafood</span>
+        <span class="tag">Sunset Dining</span>
+      </div>
+      <div class="links" style="margin-top:8px">
+        <a href="http://www.leilanis.com/">Website →</a>
+        <a href="https://www.yelp.com/biz/leilanis-on-the-beach-lahaina-3">Yelp →</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="footer">
+  Restaurant data via Yelp · Questions? Text Matthew (you have the number) · Last updated Jun 1, 2026
+</div>
+
+</body>
+</html>
